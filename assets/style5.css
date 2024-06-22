@@ -8,6 +8,7 @@
 body {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #212121; /* Dark background */
+    background-image: url('page5/op.jpg');
     color: #fff; /* White text */
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
@@ -41,6 +42,17 @@ nav ul li a button {
 
 header nav ul li a button:hover {
     background-color: #d63031; /* Darker red on hover */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 main {

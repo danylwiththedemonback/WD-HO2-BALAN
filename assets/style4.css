@@ -1,32 +1,29 @@
+/* Basic styling */
 body {
     font-family: 'Roboto Slab', serif;
     margin: 0;
     padding: 0;
+    background: url('page4/akat.jpg') no-repeat center center fixed;
     background-color: #000;
     color: #fff;
 }
 
 header {
-    color: #fff;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header nav ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: center;
     gap: 15px;
-}
-
-header nav ul li {
-    display: inline;
 }
 
 nav ul li a button {
@@ -36,6 +33,21 @@ nav ul li a button {
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+header nav ul li a button:hover {
+    background-color: #d63031; /* Darker red on hover */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero-gallery {
@@ -50,10 +62,16 @@ nav ul li a button {
     text-align: center;
     overflow: hidden; /* Ensure content doesn't overflow */
     position: relative;
+    animation: fadeIn 2s ease-out;
 }
 
-.hero-gallery.itachi {
-    background-image: url('akat.jpg'); /* Replace with your image */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .hero-content {
@@ -66,16 +84,41 @@ nav ul li a button {
     padding: 50px 0;
 }
 
-.left-column {
+.left-column, .right-column {
     flex: 1;
-    text-align: center;
     padding: 0 20px;
 }
 
+.left-column {
+    text-align: center;
+    animation: slideInLeft 2s ease-out;
+}
+
 .right-column {
-    flex: 1;
     text-align: left;
-    padding: 0 20px;
+    animation: slideInRight 2s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .image-container {

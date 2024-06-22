@@ -5,6 +5,37 @@ body {
     background-color: #f0f0f0;
 }
 
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a button:hover {
+    background-color: #d63031; /* Darker red on hover */
+}
+
 .container {
     display: flex;
     justify-content: center;
