@@ -6,22 +6,21 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-   <img src="logo.jpg"
-alt="whitedog" width="130" height="100">
+    <img src="logo.jpg" alt="logo" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">HANDS ON 2</h3>
+  <h3 align="center">HERO & CARD</h3>
 </div>
 <!-- TODO: Make a short description -->
-<h3 align="center">MY FAV HEROES</h3>
 <div align="center">
+  HANDS ON ACTIVITY 2
 </div>
 
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=/DallleHurst/WD_SEATWORK3)
+![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
 
 ---
 
@@ -39,7 +38,9 @@ alt="whitedog" width="130" height="100">
           <a href="#key-components">Key Components</a>
         </li>
         <li>
-          <a href="#technology">Technology used are html and css</a>
+          <a href="#technology">Technology</a>
+          ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+          ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
         </li>
       </ol>
     </li>
@@ -54,30 +55,42 @@ alt="whitedog" width="130" height="100">
 
 ---
 
-Anime Hero Galleries
+## Overview
 
->> Project Description
-Anime Hero Galleries is a visually captivating website that showcases a collection of iconic anime heroes. Each hero is presented with detailed information and stunning images, offering fans a delightful browsing experience. The website features a unique design with engaging animations, enhancing the overall user interaction.
+<!-- TODO: To be changed -->
+<!-- The following are just sample -->
+Description of the project in details.
 
->> Navigation and Usage Instructions:
-Home Page:
+Guiding Question:
+- What is the project
+  >> The project, titled "Anime Hero Galleries," is a website designed to showcase a collection of iconic anime heroes. It serves as a visually captivating platform where anime enthusiasts can explore detailed information and stunning images of their favorite characters.
+- Whats the purpose
+  >> The purpose of "Anime Hero Galleries" is to provide fans with an engaging and immersive browsing experience centered around beloved anime heroes. The website aims to:
+- What are key components
+  >> Key components of "Anime Hero Galleries" include:
 
-Access the home page by clicking the "Home" button in the navigation bar.
-The home page provides an overview of the website and highlights featured heroes.
-Hero Pages:
+- Homepage: Features an overview of the website and highlights featured anime heroes.
+- Individual Hero Pages: Each hero has a dedicated page with detailed information, including background, abilities, and significant appearances.
+- Card Gallery: A section showcasing anime heroes in a card layout, with interactive hover animations for a richer viewing experience.
+- Navigation and Footer: Includes a navigation bar for easy access to different sections (Home, Hero Pages, Card Gallery) and a footer with social media links (Facebook, Twitter, Instagram) and contact information.
+- What technology used and how it is used
+  >> The technologies used in "Anime Hero Galleries" are:
 
-Navigate to individual hero pages by clicking on the respective buttons (Hero 1, Hero 2, etc.) in the navigation bar.
-Each hero page contains detailed information about the hero, including their background, abilities, and significant appearances.
-Enjoy animations and interactive elements as you explore the content.
-Card Gallery:
+- HTML: Structured the content of each page, ensuring semantic markup for accessibility and SEO benefits.
+- CSS: Applied for styling the website, including layout design, colors, fonts, and animations to enhance visual appeal and user experience. External CSS files are used to maintain separation of concerns and ensure scalability.
+### Key Components
+Homepage
+Card Gallery
+Navigation Bar
+Footer
+HTML
+CSS
 
-Visit the Card Gallery by clicking the "Card Gallery" button in the navigation bar.
-The gallery showcases various anime heroes in a card layout, with hover animations for an enhanced viewing experience.
-
->> Footer:
-
-The footer includes social media links (Facebook, Twitter, Instagram) for further engagement.
-Contact information is provided for any inquiries or feedback.
+### Technology
+<!-- TODO: List of Technology Used -->
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 
 ## Rules, Practices and Principles
 1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
@@ -116,11 +129,6 @@ WD-ProjectName
 ## Resources
 
 <!-- TODO: Add References -->
-References and Resources
-Title	| Purpose	| Link
-Roboto Slab	| Font for header and main content	| Roboto Slab
+Roboto Slab	| Font for headers and main content	| Roboto Slab
 Open Sans	| Font for secondary content	| Open Sans
 Oswald	| Font for headings and titles	| Oswald
-
-Images:
-Background images and hero images sourced from various anime databases and fan sites.
