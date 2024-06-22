@@ -6,13 +6,14 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-   <img src="img/WHITEDOG.jpg"
+   <img src="logo.jpg"
 alt="whitedog" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">SW 3</h3>
+  <h3 align="center">HANDS ON 2</h3>
 </div>
 <!-- TODO: Make a short description -->
+<h3 align="center">MY FAV HEROES</h3>
 <div align="center">
 </div>
 
@@ -38,7 +39,7 @@ alt="whitedog" width="130" height="100">
           <a href="#key-components">Key Components</a>
         </li>
         <li>
-          <a href="#technology">Technology</a>
+          <a href="#technology">Technology used are html and css</a>
         </li>
       </ol>
     </li>
@@ -53,42 +54,30 @@ alt="whitedog" width="130" height="100">
 
 ---
 
-## Overview
-For this project, HTML and CSS will be used to create several static and animated headers and footers. With just these two technologies, each header and footer will display a variety of styles, showcasing inventive design and implementation.
+Anime Hero Galleries
 
-Guiding Question:
-What is the project?
-  >> The project involves utilizing only HTML and CSS to create five different static and animated headers and five different static and animated footers.
-  
-Whats the purpose?
-  >> The goal is to demonstrate HTML and CSS expertise by creating headers and footers that are aesthetically pleasing and useful and that can be quickly incorporated into web projects.
-  
-What are key components?
-  
- 1. Five header designs, both animated and static.
-2. Five footer designs, both dynamic and static.
+>> Project Description
+Anime Hero Galleries is a visually captivating website that showcases a collection of iconic anime heroes. Each hero is presented with detailed information and stunning images, offering fans a delightful browsing experience. The website features a unique design with engaging animations, enhancing the overall user interaction.
 
+>> Navigation and Usage Instructions:
+Home Page:
 
-What technology used and how it is used?
-  >>The headers and footers are structured using HTML, and styled and animated using CSS. When appropriate, CSS transitions and animations are used to produce dynamic effects.
+Access the home page by clicking the "Home" button in the navigation bar.
+The home page provides an overview of the website and highlights featured heroes.
+Hero Pages:
 
-### Key Components
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
-Static and Animated Headers
-  -Five distinct designs demonstrating creativity and variety in layout, typography, and visual elements.
-  -CSS animations applied to enhance user interaction and visual appeal.
+Navigate to individual hero pages by clicking on the respective buttons (Hero 1, Hero 2, etc.) in the navigation bar.
+Each hero page contains detailed information about the hero, including their background, abilities, and significant appearances.
+Enjoy animations and interactive elements as you explore the content.
+Card Gallery:
 
-Static and Animated Footers
-  -Five different designs complementing the headers in style and theme.
-  -Implementation of CSS for styling and adding interactive elements like hover effects or transitions.
+Visit the Card Gallery by clicking the "Card Gallery" button in the navigation bar.
+The gallery showcases various anime heroes in a card layout, with hover animations for an enhanced viewing experience.
 
+>> Footer:
 
-### Technology
-<!-- TODO: List of Technology Used -->
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+The footer includes social media links (Facebook, Twitter, Instagram) for further engagement.
+Contact information is provided for any inquiries or feedback.
 
 ## Rules, Practices and Principles
 1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
@@ -127,6 +116,11 @@ WD-ProjectName
 ## Resources
 
 <!-- TODO: Add References -->
-| Title | Purpose | Link |
-|-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+References and Resources
+Title	| Purpose	| Link
+Roboto Slab	| Font for header and main content	| Roboto Slab
+Open Sans	| Font for secondary content	| Open Sans
+Oswald	| Font for headings and titles	| Oswald
+
+Images:
+Background images and hero images sourced from various anime databases and fan sites.
