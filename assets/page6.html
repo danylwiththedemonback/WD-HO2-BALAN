@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Cards</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Card for Asta -->
+        <div class="hero-card asta">
+            <img src="asta1.jpg" alt="Asta">
+            <div class="hero-info">
+                <h2>ASTA</h2>
+                <p>The main character in the anime and manga series "Black Clover."</p>
+            </div>
+        </div>
+
+        <!-- Hero Card for Asta - Duplicated with Animation -->
+        <div class="hero-card duplicated asta">
+            <img src="asta1.jpg" alt="Asta">
+            <div class="hero-info">
+                <h2>ASTA</h2>
+                <p>The main character in the anime and manga series "Black Clover."</p>
+            </div>
+        </div>
+
+        <!-- Hero Card for Killua -->
+        <div class="hero-card killua">
+            <img src="killua.jpg" alt="Killua Zoldyck">
+            <div class="hero-info">
+                <h2>KILLUA ZOLDYCK</h2>
+                <p>One of the main characters in the anime and manga series "Hunter x Hunter."</p>
+            </div>
+        </div>
+
+        <!-- Hero Card for Killua - Duplicated with Animation -->
+        <div class="hero-card duplicated killua">
+            <img src="killua.jpg" alt="Killua Zoldyck">
+            <div class="hero-info">
+                <h2>KILLUA ZOLDYCK</h2>
+                <p>One of the main characters in the anime and manga series "Hunter x Hunter."</p>
+            </div>
+        </div>
+
+        <!-- Hero Card for Itachi -->
+        <div class="hero-card itachi">
+            <img src="itachi.jpg" alt="Itachi Uchiha">
+            <div class="hero-info">
+                <h2>ITACHI UCHIHA</h2>
+                <p>A legendary shinobi from the anime and manga series "Naruto."</p>
+            </div>
+        </div>
+
+        <!-- Hero Card for Itachi - Duplicated with Animation -->
+        <div class="hero-card duplicated itachi">
+            <img src="itachi.jpg" alt="Itachi Uchiha">
+            <div class="hero-info">
+                <h2>ITACHI UCHIHA</h2>
+                <p>A legendary shinobi from the anime and manga series "Naruto."</p>
+            </div>
+        </div>
+
+        <!-- Hero Card for Zoro -->
+        <div class="hero-card zoro">
+            <img src="zoro.jpg" alt="Roronoa Zoro">
+            <div class="hero-info">
+                <h2>RORONOA ZORO</h2>
+                <p>A swordsman in the anime and manga series "One Piece."</p>
+            </div>
+        </div>
+
+        <!-- Hero Card for Zoro - Duplicated with Animation -->
+        <div class="hero-card duplicated zoro">
+            <img src="zoro.jpg" alt="Roronoa Zoro">
+            <div class="hero-info">
+                <h2>RORONOA ZORO</h2>
+                <p>A swordsman in the anime and manga series "One Piece."</p>
+            </div>
+        </div>
+
+        <!-- Hero Card for Pochacco -->
+        <div class="hero-card pochacco">
+            <img src="pochacco.jpg" alt="Pochacco">
+            <div class="hero-info">
+                <h2>POCHACCO</h2>
+                <p>Pochacco is a white dog with black floppy ears. Pochacco enjoys playing soccer and going for walks. He is always eager to try new things and make new friends.</p>
+            </div>
+        </div>
+
+        <!-- Hero Card for Pochacco - Duplicated with Animation -->
+        <div class="hero-card duplicated pochacco">
+            <img src="pochacco.jpg" alt="Pochacco">
+            <div class="hero-info">
+                <h2>POCHACCO</h2>
+                <p>Pochacco is a white dog with black floppy ears. Pochacco enjoys playing soccer and going for walks. He is always eager to try new things and make new friends.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // JavaScript to add different animations to each duplicated card
+        document.addEventListener('DOMContentLoaded', function() {
+            const duplicatedCards = document.querySelectorAll('.duplicated');
+            duplicatedCards.forEach((card, index) => {
+                if (card.classList.contains('asta')) {
+                    card.style.animation = `fade-in 0.5s ease-in-out ${index * 200}ms forwards`;
+                } else if (card.classList.contains('killua')) {
+                    card.style.animation = `slide-in-left 0.5s ease-in-out ${index * 200}ms forwards`;
+                } else if (card.classList.contains('itachi')) {
+                    card.style.animation = `rotate-scale 0.5s ease-in-out ${index * 200}ms forwards`;
+                } else if (card.classList.contains('zoro')) {
+                    card.style.animation = `bounce 0.5s ease-in-out ${index * 200}ms forwards`;
+                } else if (card.classList.contains('pochacco')) {
+                    card.style.animation = `flip-in-x 0.5s ease-in-out ${index * 200}ms forwards`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
