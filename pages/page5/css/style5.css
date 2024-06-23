@@ -8,7 +8,7 @@
 body {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #212121; /* Dark background */
-    background-image: url('page5/op.jpg');
+    background-image: url('/pages/page5/assets/css/img/op.jpg');
     color: #fff; /* White text */
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
