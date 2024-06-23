@@ -48,7 +48,7 @@ nav ul li a button {
 }
 
 .hero {
-    background-image: url("/assets/img/bglp.gif"); 
+    background-image: url("../img/bglp.gif"); 
     background-size: cover;
     background-position: center;
     height: 100vh;
