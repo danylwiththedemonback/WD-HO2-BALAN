@@ -1,3 +1,6 @@
+/* style6.css */
+
+/* Reset and global styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -54,10 +57,7 @@ header nav ul li a button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-}
-
-.hero-card:hover {
-    transform: translateY(-5px) scale(1.02);
+    position: relative;
 }
 
 .hero-card img {
@@ -79,100 +79,129 @@ header nav ul li a button:hover {
     color: #333;
 }
 
-.hero-info h3 {
-    margin: 5px 0;
-    font-size: 1.2em;
-    color: #666;
-}
-
 .hero-info p {
     color: #666;
     line-height: 1.6;
     text-align: left;
 }
 
-/* Different Animation Keyframes */
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+/* Static animation for non-duplicated hero cards */
+.hero-card:not(.duplicated):hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes slide-in-left {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes rotate-scale {
-    from {
-        transform: rotate(-180deg) scale(0);
-        opacity: 0;
-    }
-    to {
-        transform: rotate(0) scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes bounce {
-    from {
-        transform: translateY(-50%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes flip-in-x {
-    from {
-        transform: perspective(400px) rotateX(90deg);
-        opacity: 0;
-    }
-    to {
-        transform: perspective(400px) rotateX(0deg);
-        opacity: 1;
-    }
-}
-
-/* Additional Styling for Static Cards */
-
-.static {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.static:hover {
+/* Hover animation for duplicated Asta card */
+.hero-card.duplicated.asta:hover {
     transform: translateY(-5px) scale(1.02);
+    border: 5px solid #d63031; /* Bright red border on hover */
 }
 
-.static.red {
-    background-color: #ffcccc;
+/* Glowing hover effect for duplicated Killua card */
+.hero-card.duplicated.killua {
+    overflow: hidden;
+    position: relative;
 }
 
-.static.blue {
-    background-color: #cce5ff;
+.hero-card.duplicated.killua::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
-.static.green {
-    background-color: #d3f7be;
+.hero-card.duplicated.killua:hover::before {
+    opacity: 1;
 }
 
-.static.purple {
-    background-color: #e1d5f7;
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
 
-.static.yellow {
-    background-color: #fff9cc;
+/* Animation and styles for duplicated Killua card */
+.duplicated.killua img {
+    --w: 200px; /* image width */
+    --b: 10px; /* border thickness */
+    --g: 5px; /* the gap */
+    --c: #5E8C6A; /* color */
+    width: var(--w);
+    padding: calc(1.5 * var(--w));
+    margin: calc(var(--b) + var(--g) - 1.5 * var(--w));
+    border-radius: 50%;
+    --_p: calc(var(--w) / 2 + var(--g) + var(--b)) at calc(50% + 25% * cos(var(--a))) calc(75% - 25% * sin(var(--a)));
+    background: radial-gradient(var(--_p), #0000 calc(100% - var(--b) - 1px), var(--c) calc(100% - var(--b)));
+    transform-origin: 50% 75%;
+    rotate: calc(var(--a) - 90deg);
+    clip-path: circle(var(--_p));
+    cursor: pointer;
+    --a: 0deg;
+    transition: --a 0.5s;
+}
+
+.duplicated.killua img.alt {
+    --_p: calc(var(--w) / 2 + var(--g) + var(--b)) at calc(50% - 25% * cos(var(--a))) calc(75% - 25% * sin(var(--a)));
+    rotate: calc(90deg - var(--a));
+}
+
+.duplicated.killua img:hover {
+    --a: 90deg;
+}
+
+/* Dynamic animations for duplicated Itachi card */
+.hero-card.duplicated.itachi {
+    position: relative;
+}
+
+.hero-card.duplicated.itachi::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: inherit;
+}
+
+.hero-card.duplicated.itachi:hover::after {
+    opacity: 1;
+}
+
+/* Dynamic animations for duplicated Zoro card */
+.hero-card.duplicated.zoro img {
+    transition: transform 0.3s ease;
+}
+
+.hero-card.duplicated.zoro:hover img {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Dynamic animations for duplicated Pochacco card */
+.hero-card.duplicated.pochacco {
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-card.duplicated.pochacco img {
+    position: relative;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.hero-card.duplicated.pochacco:hover img {
+    transform: rotate(-10deg) scale(1.05);
+    filter: brightness(1.2);
 }
