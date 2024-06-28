@@ -85,8 +85,8 @@ header nav ul li a button:hover {
     text-align: left;
 }
 
-/* Static animation for non-duplicated hero cards */
-.hero-card:not(.duplicated):hover {
+/* Static animation for static hero cards */
+.hero-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
