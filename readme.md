@@ -129,6 +129,17 @@ WD-ProjectName
 ## Resources
 
 <!-- TODO: Add References -->
-Roboto Slab	| Font for headers and main content	| Roboto Slab
-Open Sans	| Font for secondary content	| Open Sans
-Oswald	| Font for headings and titles	| Oswald
+| Title | Purpose | Link |
+|-|-|-|
+| zyx-0314  | Template SW 4 | https://github.com/zyx-0314/WD-Seatwork-4.git |
+| Pexels | For Mountain climbing images or mountain | https://www.pexels.com/search/mountain%20climbing/ |
+| Google   | Images of boots | https://www.google.com |
+| devdevout | Style ideas and animation | https://devdevout.com/ |
+| W3school | Knowledge of css style | https://www.w3schools.com/ |
+
+## Instructions
+
+In the landing page you will have 7 button options from home to hero 1-5 then card gallery. if you press hero 1 from the header you will see the first card same goes to the hero 2-5 then in the card gallery you will see 5 static hero cards then 5 animated hero cards
+
+## Deployment link
+https://danylwiththedemonback.github.io/WD-HO2-BALAN/index.html
