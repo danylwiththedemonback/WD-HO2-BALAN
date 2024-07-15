@@ -3,12 +3,13 @@ body {
     font-family: 'Roboto Slab', serif;
     margin: 0;
     padding: 0;
-    background: url("../../page4/css/img/akat.jpg") no-repeat center center fixed;
+    background: url("../../../pages/page4/css/img/akat.jpg") no-repeat center center fixed;
     background-color: #000;
     color: #fff;
 }
 
-header {
+/* Header styles */
+.header {
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -20,34 +21,37 @@ header {
     z-index: 1000;
 }
 
-header nav ul {
-    list-style-type: none;
+.header .container {
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
-nav ul li a button {
+.header .btn {
     background-color: #555;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-right: 15px;
 }
 
-header nav ul li a button:hover {
-    background-color: #d63031; /* Darker red on hover */
+.header .btn:hover {
+    background-color: #777;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+.header .btn.active {
+    background-color: #777;
+}
+
+/* Main section styles */
+main {
+    padding: 80px 20px 20px; /* Adjust padding to account for fixed header */
 }
 
 .hero-gallery {
@@ -60,18 +64,6 @@ header nav ul li a button:hover {
     background-position: center;
     color: #fff;
     text-align: center;
-    overflow: hidden; /* Ensure content doesn't overflow */
-    position: relative;
-    animation: fadeIn 2s ease-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 .hero-content {
@@ -91,34 +83,10 @@ header nav ul li a button:hover {
 
 .left-column {
     text-align: center;
-    animation: slideInLeft 2s ease-out;
 }
 
 .right-column {
     text-align: left;
-    animation: slideInRight 2s ease-out;
-}
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
 }
 
 .image-container {
@@ -172,6 +140,7 @@ header nav ul li a button:hover {
     line-height: 1.5;
 }
 
+/* Footer styles */
 footer {
     color: #fff;
     text-align: center;

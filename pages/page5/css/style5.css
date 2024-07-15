@@ -44,17 +44,6 @@ header nav ul li a button:hover {
     background-color: #d63031; /* Darker red on hover */
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 main {
     padding: 80px 20px 20px; /* Adjust top padding to accommodate fixed header */
     display: flex;
@@ -65,7 +54,7 @@ main {
 
 .hero-gallery {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 1200px;
@@ -80,20 +69,14 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .image-item {
     flex: 1 0 calc(33.33% - 20px);
     max-width: calc(33.33% - 20px);
     overflow: hidden;
-    position: relative;
     border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.image-item:hover {
-    transform: scale(1.05);
 }
 
 .image-item img {
@@ -105,7 +88,7 @@ main {
 .text-container {
     flex: 1;
     padding: 20px;
-    text-align: left;
+    text-align: center;
     color: #fff; /* White text */
 }
 

@@ -5,22 +5,18 @@
 <br />
 <div align="center">
   <a href="https://github.com/zyx-0314/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="/assets/img/logo.jpg" alt="logo" width="130" height="100">
+    <img src="./assets/img/logo.jpg" alt="Panda" width="130" height="100">
   </a>
-<!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">HERO & CARD</h3>
+
+  <h3 align="center">HANDS ON 2</h3>
 </div>
-<!-- TODO: Make a short description -->
+
 <div align="center">
-  HANDS ON ACTIVITY 2
-</div>
+ This project showcases various features and functionalities designed to enhance user experience. 
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=Maerona03/WD-Handson2)
 
 ---
 
@@ -39,8 +35,6 @@
         </li>
         <li>
           <a href="#technology">Technology</a>
-          ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-          ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
         </li>
       </ol>
     </li>
@@ -59,40 +53,30 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
-
 Guiding Question:
-- What is the project
-  >> The project, titled "Anime Hero Galleries," is a website designed to showcase a collection of iconic anime heroes. It serves as a visually captivating platform where anime enthusiasts can explore detailed information and stunning images of their favorite characters.
-- Whats the purpose
-  >> The purpose of "Anime Hero Galleries" is to provide fans with an engaging and immersive browsing experience centered around beloved anime heroes. The website aims to:
-- What are key components
-  >> Key components of "Anime Hero Galleries" include:
 
-- Homepage: Features an overview of the website and highlights featured anime heroes.
-- Individual Hero Pages: Each hero has a dedicated page with detailed information, including background, abilities, and significant appearances.
-- Card Gallery: A section showcasing anime heroes in a card layout, with interactive hover animations for a richer viewing experience.
-- Navigation and Footer: Includes a navigation bar for easy access to different sections (Home, Hero Pages, Card Gallery) and a footer with social media links (Facebook, Twitter, Instagram) and contact information.
-- What technology used and how it is used
-  >> The technologies used in "Anime Hero Galleries" are:
+- What is the project : The project is about creating a HERO and CARD gallery that demonstrates our design skills and web development knowledge. The website includes  7 pages, showcasing distinct layouts for various features. 
 
-- HTML: Structured the content of each page, ensuring semantic markup for accessibility and SEO benefits.
-- CSS: Applied for styling the website, including layout design, colors, fonts, and animations to enhance visual appeal and user experience. External CSS files are used to maintain separation of concerns and ensure scalability.
+- Whats the purpose: To enhance and development skills techniques in web design and development.
+
 ### Key Components
-Homepage
-Card Gallery
-Navigation Bar
-Footer
-HTML
-CSS
+
+<!-- TODO: List of Key Components -->
+<!-- The following are just sample -->
+
+- MultiPage Website
+- Button or Links
+- Image Masking
+- Color Hover Effects
+- Card Animation
 
 ### Technology
-<!-- TODO: List of Technology Used -->
+
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 
 ## Rules, Practices and Principles
+
 1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
 2. Do not rename any .html files; always use `index.html` as the filename.
 3. Place Files in their respective folders.
@@ -129,17 +113,19 @@ WD-ProjectName
 ## Resources
 
 <!-- TODO: Add References -->
-| Title | Purpose | Link |
-|-|-|-|
-| zyx-0314  | Template SW 4 | https://github.com/zyx-0314/WD-Seatwork-4.git |
-| Pexels | For Mountain climbing images or mountain | https://www.pexels.com/search/mountain%20climbing/ |
-| Google   | Images of boots | https://www.google.com |
-| devdevout | Style ideas and animation | https://devdevout.com/ |
-| W3school | Knowledge of css style | https://www.w3schools.com/ |
 
-## Instructions
+| Title     | Purpose                                        | Link                                               |
+| --------- | ---------------------------------------------- | -------------------------------------------------- |
+| FONTS     | Applying style fonts to make the font better.  | https://fonts.google.com/selection/embed           |
+| Youtube   | Getting ideas and tutorial for different style | https://www.youtube.com/watch?v=6KSKn9xIxUQ&t=518s |
+| w3schools | Learn some codes in css and how it works.      | https://www.w3schools.com/csS/css_boxmodel.asp     |
+| GOOGLE    | Get some ideas for styling and animation.      | https://devdevout.com/css/css-cards                |
+| Pinterest  | Get some ideas for styling and animation.    | https://www.pinterest.com/search/pins/?q=web%20page%20to%20identify&rs=typed
 
-In the landing page you will have 7 button options from home to hero 1-5 then card gallery. if you press hero 1 from the header you will see the first card same goes to the hero 2-5 then in the card gallery you will see 5 static hero cards then 5 animated hero cards
+## Instructions 
+
+wait for the Home page to load then you will have six buttons you can choose between them and in those button it will showcase different hero cards and on the 6th one you will have a card gallery that showcase 5 static cards and 5 animated cards
 
 ## Deployment link
+
 https://danylwiththedemonback.github.io/WD-HO2-BALAN/index.html

@@ -11,7 +11,8 @@ body {
     background-position: center;
 }
 
-header {
+/* Header styles */
+.header {
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -23,34 +24,37 @@ header {
     z-index: 1000;
 }
 
-header nav ul {
-    list-style-type: none;
+.header .container {
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
-nav ul li a button {
+.header .btn {
     background-color: #555;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-right: 15px;
 }
 
-header nav ul li a button:hover {
-    background-color: #d63031; /* Darker red on hover */
+.header .btn:hover {
+    background-color: #777;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+.header .btn.active {
+    background-color: #777;
+}
+
+/* Main section styles */
+main {
+    padding: 80px 20px 20px; /* Adjust padding to account for fixed header */
 }
 
 .hero-gallery {
@@ -63,16 +67,6 @@ header nav ul li a button:hover {
     background-position: center;
     color: #fff;
     text-align: center;
-    animation: fadeIn 2s ease-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 .hero-content {
@@ -82,18 +76,6 @@ header nav ul li a button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: slideInUp 2s ease-out;
-}
-
-@keyframes slideInUp {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 
 .hero-content .center-image {
@@ -102,73 +84,32 @@ header nav ul li a button:hover {
     margin-bottom: 20px;
     border-radius: 50%;
     border: 5px solid #fff;
-    animation: rotateIn 2s ease-out;
-}
-
-@keyframes rotateIn {
-    from {
-        transform: rotate(-360deg);
-        opacity: 0;
-    }
-    to {
-        transform: rotate(0);
-        opacity: 1;
-    }
 }
 
 .hero-content .text-container {
     text-align: center;
     margin-top: 20px;
-    animation: fadeIn 2s ease-out;
 }
 
 .hero-content h1 {
     font-family: 'Roboto Slab', serif;
     font-size: 3em;
     margin: 10px 0;
-    animation: slideInLeft 2s ease-out;
-}
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
 }
 
 .hero-content h2 {
     font-family: 'Roboto Slab', serif;
     font-size: 2em;
     margin: 10px 0;
-    animation: slideInRight 2s ease-out;
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
 }
 
 .hero-content p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     margin: 10px 0;
-    animation: fadeIn 2s ease-out;
 }
 
-main {
-    padding: 50px 20px;
-}
-
+/* Footer styles */
 footer {
     color: #fff;
     text-align: center;

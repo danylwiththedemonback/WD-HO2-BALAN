@@ -1,0 +1,68 @@
+.card8 {
+    width: 300px; /* Adjust as needed */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card8:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .square {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .effect {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .custom-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #faf8f8; /* Text color for the link */
+  }
+  
+  .custom-bg {
+    width: 100%; /* Ensure the image covers the entire background */
+    height: 150px; /* Adjust height based on your content */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .custom-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire div */
+  }
+  
+  .custom-title {
+    padding: 15px;
+    font-size: 18px;
+  }
+  
+  .custom-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; /* Example button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .custom-button:hover {
+    background-color: #7fae89; /* Darker shade or different color on hover */
+  }
+  
