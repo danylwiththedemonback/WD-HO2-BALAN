@@ -124,7 +124,7 @@ WD-ProjectName
 
 ## Instructions 
 
-wait for the Home page to load then you will have six buttons you can choose between them and in those button it will showcase different hero cards and on the 6th one you will have a card gallery that showcase 5 static cards and 5 animated cards
+wait for the Home page to load then you will have six buttons you can choose between them and those button and it will showcase different hero cards and on the 6th one you will have a card gallery that showcases 5 static cards and 5 animated cards
 
 ## Deployment link
 
